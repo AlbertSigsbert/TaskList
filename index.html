@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <title>Task List</title>
+</head>
+<body class="bg-gray-100">
+    <h1 class="text-4xl font-bold text-center text-green-500">My Tasks</h1>
+     
+    
+        <div class="mt-6 mx-96 p-12 text-center bg-green-100  rounded-lg shadow-xl">
+           <form class="mt-4 flex">
+            <input id="task-input" class="flex-grow mr-8 border border-transparent text-center  focus:placeholder-green-200 shadow-md rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Enter New Task">
+            <button id="add-task" class="px-4 py-2 bg-green-300 hover:bg-green-400  text-white rounded-md" type="submit">Add Task</button>
+           </form>
+        </div>
+
+        
+        <div class="mt-6 mx-96 p-12 text-center bg-green-100  rounded-lg shadow-xl">
+            <div class="mt-4">
+              <h3 class="italic font-medium font-serif text-2xl text-green-600">Tasks</h3>
+            </div>
+            <ul id="tasks" class="mt-2">
+                <li class="mt-3 flex bg-green-200  px-4 py-2 shadow-md rounded-md hover:bg-green-300">
+                    <p class=" text-green-700 text-left flex-grow mr-8 border border-transparent">Read a Book</p>
+                    <a class="text-red-500 hover:text-red-700" href="">x</a>
+                </li>
+            </ul>
+         </div>
+ <script src="main.js"></script>   
+</body>
+</html>
