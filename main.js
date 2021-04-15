@@ -40,7 +40,7 @@ function addTask(e){
      tasksUl.appendChild(task);
 
      //clear the input
-      //taskInput.value = ' ';
+      taskInput.value = '';
 
       console.log(tasksUl) 
    }

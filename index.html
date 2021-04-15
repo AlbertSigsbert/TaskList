@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="/css/tailwind.css">
     <title>Task List</title>
 </head>
-<body class="bg-gray-100">
-    <h1 class="text-4xl font-bold text-center text-green-500">My Tasks</h1>
+<body class="bg-gray-100 max-w-sm  sm:max-w-xl lg:max-w-2xl mx-auto">
+    <h1 class="text-2xl sm:text-4xl font-bold text-center text-green-500">My Tasks</h1>
      
-    
-        <div class="mt-6 mx-96 p-12 text-center bg-green-100  rounded-lg shadow-xl">
-           <form class="mt-4 flex">
-            <input id="task-input" class="flex-grow mr-8 border border-transparent text-center  focus:placeholder-green-200 shadow-md rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Enter New Task">
-            <button id="add-task" class="px-4 py-2 bg-green-300 hover:bg-green-400  text-white rounded-md" type="submit">Add Task</button>
+        <div class=" mt-12 sm:mt-6 p-6 sm:p-12 max-w-xs sm:max-w-lg lg:max-w-2xl  mx-auto text-center bg-green-100  rounded-lg shadow-xl">
+           <form class="mt-4 flex flex-col sm:flex-row">
+            <input id="task-input" class="h-16 sm:h-auto flex-grow-0 sm:flex-grow sm:mr-8 border border-transparent text-center  focus:placeholder-green-200 shadow-md rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Enter New Task">
+            <button id="add-task" class="mt-4 sm:mt-0 px-1  sm:px-4 py-2 bg-green-300 hover:bg-green-400  text-white rounded-md" type="submit">Add Task</button>
            </form>
         </div>
 
         
-        <div class="mt-6 mx-96 p-12 text-center bg-green-100  rounded-lg shadow-xl">
+        <div class="mt-12 sm:mt-6 p-6 sm:p-12 max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto text-center bg-green-100  rounded-lg shadow-xl">
             <div class="mt-4">
               <h3 class="italic font-medium font-serif text-2xl text-green-600">Tasks</h3>
             </div>
@@ -30,6 +29,7 @@
                 </li>
             </ul>
          </div>
+
  <script src="main.js"></script>   
 </body>
 </html>
