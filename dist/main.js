@@ -2,7 +2,7 @@
 const taskForm = document.querySelector('form');
 const addTaskBtn = document.getElementById('add-task');
 const taskInput = document.getElementById('task-input');
-
+const tasks = document.getElementById('tasks');
 
 //Load Event listeners
 loadEventListeners();
@@ -10,6 +10,7 @@ loadEventListeners();
 //The loadEventlisteners fn
 function loadEventListeners(){
    taskForm.addEventListener('submit' , addTask);
+   tasks.addEventListener('click' , removeTask);
 }
 
 //The eventHandler 
@@ -29,7 +30,7 @@ function addTask(e){
      //Creating an anchor tag
      const atag = document.createElement('a');
      atag.className ='text-red-500 hover:text-red-700';
-     atag.innerText = 'x';
+     atag.innerHTML = '<i class="fa fa-times"></i>';
 
      //Append the paragraph and a tag to li
      task.appendChild(para);
@@ -47,4 +48,15 @@ function addTask(e){
 
   
    e.preventDefault();
+}
+
+//Remove task eventHandler
+function removeTask(e){
+   if(e.target.parentElement.classList.contains('text-red-500'))
+   {
+     if(confirm('Do you want to delete this task?'))
+     {
+      e.target.parentElement.parentElement.remove();
+     }
+   }
 }
