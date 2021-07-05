@@ -16,7 +16,8 @@ This is a tasklist(todolist) web application built on JS.
   </p>
 ### Links
 
-- Live Site URL: https://task-lists.netlify.app/
+- [Live Site URL](https://task-lists.netlify.app/)
+- [Youtube](https://youtu.be/0NRh3-h7q6w)
 
 
 ### Built with
