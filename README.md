@@ -30,6 +30,4 @@ This is a tasklist(todolist) web application built on JS.
 
 ## Author
 
-- Website -`https://AlbertSigsbert.github.io/Portfolio/`
-- Frontend Mentor -https://www.frontendmentor.io/profile/AlbertSigsbert
 - Twitter - https://twitter.com/albert_sigsbert
